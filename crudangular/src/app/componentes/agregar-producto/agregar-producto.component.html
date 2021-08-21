@@ -1,0 +1,51 @@
+<p>agregar-producto works!</p>
+<div class="card">
+    <div class="card-header">
+        Agregar Producto
+    </div>
+    <div class="card-body">
+        <form ngNativeValidate [formGroup]="formularioProd"(ngSubmit)="enviarDatos()">
+
+            <div class="mb-3">
+              <label for="" class="form-label">Nombre</label>
+              <input required type="text"
+                class="form-control" name="" formControlName="NomProd" id="" aria-describedby="helpId" placeholder="Escribe nombre del producto.">
+              <small id="helpId" class="form-text text-muted">Help text</small>
+            </div>
+            
+            <div class="mb-3">
+              <label for="" class="form-label">Cantidad</label>
+              <input required type="number"
+                class="form-control" name="" formControlName="CanProd" id="" aria-describedby="helpId" placeholder="Escriba la cantidad">
+              <small id="helpId" class="form-text text-muted">Help text</small>
+            </div>
+
+            <div class="mb-3">
+              <label for="" class="form-label">Lote</label>
+              <input required type="text"
+                class="form-control" name="" formControlName="LotProd" id="" aria-describedby="helpId" placeholder="Escriba el Lote">
+              <small id="helpId" class="form-text text-muted">Help text</small>
+            </div>
+
+            <div class="mb-3">
+              <label for="" class="form-label">Fecha de Vencimiento</label>
+              <input required type="datetime"
+                class="form-control" name="" formControlName="FVenPro" id="" aria-describedby="helpId" placeholder="Escriba la Fecha de Vencimiento">
+              <small id="helpId" class="form-text text-muted">Help text</small>
+            </div>
+
+            <div class="mb-3">
+              <label for="" class="form-label">Precio</label>
+              <input required type="number"
+                class="form-control" name="" formControlName="PreProd" id="" aria-describedby="helpId" placeholder="Escriba el Precio">
+              <small id="helpId" class="form-text text-muted">Help text</small>
+            </div>
+
+            <div class="btn-group" role="group" aria-label="">
+                <button type="submit" class="btn btn-success">Agregar</button>
+                <button type="button" routerLink="/listar-producto" routerLinkActive="router-link-active"  class="btn btn-primary">Cancelar</button>
+
+            </div>
+        </form>
+    </div>
+</div>

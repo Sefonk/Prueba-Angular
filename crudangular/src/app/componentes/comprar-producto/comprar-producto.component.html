@@ -1,0 +1,36 @@
+<div class="card">
+    <div class="card-header">
+        
+    </div>
+    <div class="card-body">
+        <h1>
+            Comprar Producto
+        </h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Cantidad</th>
+                    <th>Lote</th>
+                    <th>Fecha Vencimiento</th>
+                    <th>Precio Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let producto of Productos; let iControl=index">
+                    <td>{{producto.ID_Prod}}</td>
+                    <td>{{producto.NomProd}}</td>
+                    <td>{{producto.CanProd}}</td>
+                    <td>{{producto.LotProd}}</td>
+                    <td>{{producto.FVenPro}}</td>
+                    <td>{{producto.PreProd}}</td>
+                                           
+                   <a name="" id="" class="btn btn-dark" (click)="borrarRegistro(producto.ID_Prod, iControl)">Comprar</a>
+            </tbody>
+        </table>
+        
+
+    </div>
+   
+</div>
